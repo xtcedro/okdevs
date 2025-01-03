@@ -41,29 +41,60 @@ body {
     margin: 1rem 0 2rem;
 }
 
-/* Navigation */
-.desktop-nav ul {
-    list-style: none;
+/* Desktop Navigation Bar */
+.desktop-nav {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem 0;
-    background-color: #161B22;
-    border-bottom: 2px solid #FFD700;
+    align-items: center;
+    background-color: #0B0C10; /* Dark background for futuristic feel */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border-bottom: 2px solid #1F2833; /* Slightly lighter border for separation */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .desktop-nav a {
-    color: #C9D1D9;
+    color: #C5C6C7; /* Light gray for text */
     text-decoration: none;
+    font-size: 1rem;
     font-weight: bold;
-    transition: color 0.3s ease;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.desktop-nav a:hover, .desktop-nav a.active {
-    color: #FFD700; /* Gold highlight */
+.desktop-nav a:hover {
+    color: #66FCF1; /* Aqua blue for hover effect */
+    transform: scale(1.1); /* Slight enlargement on hover */
 }
 
+.desktop-nav a.active {
+    color: #66FCF1; /* Aqua blue for the active link */
+    border-bottom: 2px solid #66FCF1; /* Underline the active link */
+}
+
+.desktop-nav a:focus {
+    outline: 2px dashed #66FCF1; /* Accessibility focus indicator */
+    outline-offset: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .desktop-nav {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .desktop-nav a {
+        margin: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
 /* Content Section */
+
 /* Intro Section */
 .intro-section {
     background: linear-gradient(135deg, #001F3F, #002D50); /* Dark blue gradient */
@@ -134,14 +165,6 @@ body {
     font-style: italic;
 }
 
-.media-container {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-}
-
 figure {
     text-align: center;
 }
@@ -156,15 +179,101 @@ figure img:hover {
     transform: scale(1.05);
 }
 
+video {
+    max-width: 100%;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+}
+/* Content Section */
+.content {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    text-align: center;
+    background-color: #0B0C10; /* Dark background for futuristic feel */
+    color: #C5C6C7; /* Light gray text for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+/* Section Heading */
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #66FCF1; /* Aqua blue for emphasis */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+
+/* Media Container */
+.media-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.media-container figure {
+    margin: 0;
+    text-align: center;
+}
+
+.media-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.media-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #C5C6C7;
+    text-align: center;
+}
+
+/* Video Container */
 .video-container {
     text-align: center;
     margin: 2rem auto;
 }
 
-video {
+.video-container h3 {
+    font-size: 1.8rem;
+    color: #66FCF1; /* Aqua blue for emphasis */
+    margin-bottom: 1rem;
+}
+
+.video-container video {
     max-width: 100%;
-    border: 2px solid #FFD700;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.video-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #C5C6C7;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .video-container h3 {
+        font-size: 1.5rem;
+    }
 }
 
 /* Footer */
