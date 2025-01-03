@@ -34,11 +34,40 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+/* Blockquote Styling */
 .hero-quote {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-style: italic;
-    color: #C9D1D9;
-    margin: 1rem 0 2rem;
+    text-align: center;
+    color: #E0E0E0; /* Light gray for readability */
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    border-left: 5px solid #FFD700; /* Gold accent for emphasis */
+    background: linear-gradient(135deg, rgba(0, 45, 80, 0.7), rgba(0, 45, 80, 0.5));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.hero-quote em {
+    color: #FFD700; /* Gold for highlighted emphasis within the blockquote */
+    font-weight: bold;
+    font-style: normal;
+}
+
+.hero-quote::before,
+.hero-quote::after {
+    content: '"';
+    font-size: 3rem;
+    color: #FFD700; /* Gold quote marks for elegance */
+    position: relative;
+    top: 10px;
+    margin: 0 5px;
+}
+
+.hero-quote::after {
+    content: '"';
 }
 
 /* Desktop Navigation Bar */
