@@ -6,6 +6,15 @@
     <meta name="description" content="OK Devs - Empowering Oklahoma developers and citizens through innovation and collaboration.">
     <title>Home - OK Devs</title>
     <link rel="stylesheet" href="assets/css/style.css">
+        <script>
+        function setLanguage(lang) {
+            if (lang === 'es') {
+                window.location.href = 'index_es.html';
+            } else {
+                document.getElementById('language-modal').style.display = 'none';
+            }
+        }
+        </script>
 </head>
 <body>
     <!-- Language Selection Modal -->
