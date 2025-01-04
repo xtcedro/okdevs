@@ -30,3 +30,21 @@ The OK Devs website serves as a digital hub for promoting open-source developmen
 The repository is organized as follows:
 
 ├── index.html          # Homepage ├── about.html          # About Us page ├── contact.html        # Contact Us page ├── letter.html         # Open Letter page ├── legal/              # Legal pages (Terms, Privacy, Cookies, etc.) │   ├── accessibility.html │   ├── cookies.html │   ├── disclaimer.html │   ├── privacy.html │   ├── terms.html ├── assets/             # Static files (images, videos, CSS, etc.) │   ├── css/ │   │   ├── style.css   # Main stylesheet │   ├── images/         # Banner images, logos, and thumbnails │   ├── videos/         # Promotional or informational videos │   ├── pdfs/           # Downloadable content, including open letters
+
+---
+
+## Features
+
+- **Multilingual Support**: English and Spanish versions of the website (_es.html).
+- **Accessibility**: Designed with WCAG 2.1 standards in mind.
+- **Responsive Design**: Mobile and tablet-friendly layouts.
+- **Secure Hosting**: SSL/TLS encryption using Certbot.
+
+---
+
+## How to Use
+
+### Prerequisites
+- A **Linux-based server** (Debian recommended).
+- **Nginx** installed and configured.
+- **Certbot** for SSL management.
