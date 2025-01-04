@@ -56,7 +56,7 @@ We welcome contributions from the community. Whether it's improving content, fix
 
 ---
 
-###License
+### License
 
 This project is licensed under the MIT License.
 
