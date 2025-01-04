@@ -579,3 +579,300 @@ html {
     background-color: transparent; /* No background for active link */
     border-bottom: 2px solid #FFD700; /* Gold underline for active state */
 }
+
+/* Mobile View Styling (max-width: 767px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav, .desktop-nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center;
+        padding: 1rem 0;
+        gap: 1rem; /* Space between links */
+    }
+
+    .desktop-nav a {
+        font-size: 0.85rem; /* Smaller font size for mobile */
+        width: 100%; /* Full-width links */
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+        text-align: center; /* Center align text */
+    }
+
+    .desktop-nav a.active {
+        border-bottom: none; /* Remove underline on active link for mobile */
+    }
+
+    .hero-section {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .hero-title {
+        font-size: 1.8rem; /* Resize title for better visibility */
+        margin-bottom: 1rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 1rem; /* Adjust button size for readability */
+    }
+
+
+        .signup-section {
+                padding: 10px;
+                max-width: 90%;
+        }
+
+        .signup-section h2 {
+                font-size: 20px;
+        }
+
+
+        .signup-form input[type"tel"],
+        .signup-form input[type"text"],
+        .signup-form input[type"passwords"], {
+                font-size: 12px;
+                padding: 6px;
+        }
+
+        .signup-section p {
+                font-size: 12px;
+        }
+    .title-banner {
+        padding: 1rem 0; /* Add spacing for mobile */
+        background-color: #f8f8f8; /* Optional: light background for contrast */
+    }
+
+    .title-banner img {
+        max-width: 100%; /* Ensure full responsiveness */
+        height: auto;
+        margin: 0 auto; /* Center the image */
+    }
+
+    .services-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 1.5rem;
+    }
+
+    .service-item {
+        width: 90%; /* Use almost full width */
+        margin: 0 auto; /* Center the items */
+    }
+
+    .contact-info {
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+        margin: 1.5rem auto; /* Adjust margin for spacing */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .contact-info h2 {
+        font-size: 1.5rem; /* Slightly smaller heading */
+    }
+
+    .contact-info p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+
+    .contact-info a {
+        font-size: 1rem; /* Consistent link size */
+    }
+
+    .form-container {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+        margin: 1rem auto; /* Center and reduce margin */
+        max-width: 90%; /* Use most of the screen width */
+    }
+
+    .floating-label input,
+    .floating-label textarea {
+        font-size: 0.9rem; /* Adjust font size for readability */
+        padding: 0.6rem 0.5rem; /* Reduce padding */
+    }
+
+    .floating-label label {
+        font-size: 0.9rem; /* Adjust label size for smaller inputs */
+    }
+
+    .offers-section {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+        margin: 1rem auto;
+        max-width: 95%; /* Full width with slight margin */
+    }
+
+    .offers-title {
+        font-size: 2.2rem; /* Slightly smaller title for mobile */
+        margin-bottom: 1rem;
+    }
+
+    .offers-description {
+        font-size: 1.2rem; /* Adjust description font size */
+        line-height: 1.6;
+    }
+
+    .offers-cta-button {
+        font-size: 1rem; /* Smaller button font size */
+        padding: 0.6rem 1.2rem; /* Adjust button padding */
+    }
+
+    form button {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 0.6rem; /* Smaller padding for buttons */
+    }
+
+    .error-message,
+    .success-message {
+        font-size: 0.9rem; /* Adjust message font size */
+    }
+}
+
+/* Tablet View Adjustments (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body { font-size: 22px; /* Adjust base font size */ }
+
+    nav, .desktop-nav {
+        justify-content: space-between; /* Distribute navigation links evenly */
+        padding: 1rem 1.5rem;
+    }
+
+    .desktop-nav a {
+        font-size: 0.9rem; /* Slightly larger font size for tablets */
+        padding: 0.5rem 1rem;
+    }
+
+    .desktop-nav a.active {
+        border-bottom: 2px solid #FFD700; /* Retain underline for tablets */
+    }
+
+    .hero-title {
+        font-size: 2.2rem; /* Adjust title size for tablets */
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem; /* Adjust button size */
+    }
+
+    .title-banner {
+        padding: 0; /* Moderate padding for tablets */
+    }
+
+    .title-banner img {
+        width: 100vw; /* Slightly reduce image size */
+    }
+
+    .services-container {
+        flex-wrap: wrap; /* Allow wrapping of items */
+        gap: 1rem;
+    }
+
+    .service-item {
+        width: 48%; /* Two items per row */
+        margin: 0 1%;
+    }
+
+    .contact-info {
+        padding: 2rem; /* Standard padding for tablets */
+        margin: 2rem auto;
+        font-size: 1rem; /* Standard paragraph size */
+    }
+
+    .contact-info h2 {
+        font-size: 1.7rem; /* Adjust heading size */
+    }
+
+    .contact-info p {
+        font-size: 1rem; /* Standard paragraph size */
+    }
+
+    .contact-info a {
+        font-size: 1rem; /* Consistent link size */
+    }
+
+    .form-container {
+        padding: 2rem; /* Maintain balance for tablet screens */
+        margin: 1.5rem auto;
+        max-width: 80%; /* Slightly wider form for tablets */
+    }
+
+    .floating-label input,
+    .floating-label textarea {
+        font-size: 1rem; /* Standard font size */
+        padding: 0.7rem; /* Slightly larger padding for better UX */
+    }
+
+    .floating-label label {
+        font-size: 1rem; /* Consistent label size */
+    }
+
+    .offers-section {
+        padding: 2.5rem 2rem; /* Moderate padding */
+        margin: 1.5rem auto;
+        max-width: 85%; /* Maintain balanced width */
+    }
+
+    .offers-title {
+        font-size: 2.5rem; /* Adjust size for tablets */
+        margin-bottom: 1.2rem;
+    }
+
+
+        .signup-section {
+                padding: 15px;
+                max-width: 500px;
+        }
+
+        .signup-section h2 {
+                font-size: 22px;
+        }
+
+
+        .signup-form input[type"tel"],
+        .signup-form input[type"text"],
+        .signup-form input[type"passwords"], {
+                font-size: 13px;
+                padding: 8px;
+        }
+
+        .signup-section p {
+                font-size: 13px;
+        }
+
+    .offers-description {
+        font-size: 1.3rem; /* Moderate font size */
+        line-height: 1.7;
+    }
+
+    .offers-cta-button {
+        font-size: 1.1rem; /* Adjust button size */
+        padding: 0.7rem 1.5rem;
+    }
+
+    form button {
+        font-size: 1rem; /* Standard font size */
+        padding: 0.75rem; /* Adjust padding for tablet buttons */
+    }
+
+    .error-message,
+    .success-message {
+        font-size: 1rem; /* Adjust size for messages */
+    }
+
+    .legal-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .legal-links a {
+        font-size: 12px;
+    }
+}
