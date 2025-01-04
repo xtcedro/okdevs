@@ -1,147 +1,57 @@
-/* General Reset */
-body, h1, h2, h3, p, ul, li, a {
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text for readability */
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-/* Body Styling */
-body {
-    background-color: #0D1117; /* Dark background */
-    color: #C9D1D9; /* Soft white text */
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+/* Gold Gradient Titles */
+h1, h2, h3 {
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Language Modal */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden; /* Prevents scrolling when the modal is open */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #1F2937, #0D1117);
-    color: #E8B21F; /* Gold text */
+    background-color: #000000; /* Black for hero background */
+    color: #FFFFFF; /* White text */
+    padding: 3rem 2rem;
     text-align: center;
-    padding: 5rem 2rem;
-    position: relative;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #FFD700; /* Gold text for paragraphs */
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, #FFD700, #E8B21F);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* Blockquote Styling */
-.hero-quote {
-    font-size: 1.8rem;
-    font-style: italic;
-    text-align: center;
-    color: #E0E0E0; /* Light gray for readability */
-    margin: 2rem auto;
-    padding: 1.5rem;
-    max-width: 800px;
-    border-left: 5px solid #FFD700; /* Gold accent for emphasis */
-    background: linear-gradient(135deg, rgba(0, 45, 80, 0.7), rgba(0, 45, 80, 0.5));
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-    border-radius: 10px;
-    line-height: 1.6;
-}
-
-.hero-quote em {
-    color: #FFD700; /* Gold for highlighted emphasis within the blockquote */
-    font-weight: bold;
-    font-style: normal;
-}
-
-.hero-quote::before,
-.hero-quote::after {
-    content: '"';
     font-size: 3rem;
-    color: #FFD700; /* Gold quote marks for elegance */
-    position: relative;
-    top: 10px;
-    margin: 0 5px;
-}
-
-.hero-quote::after {
-    content: '"';
-}
-
-/* Desktop Navigation Bar */
-.desktop-nav {
-    display: flex;
-    justify-content: center; /* Center-align the links */
-    align-items: center;
-    gap: 2rem; /* Space between links */
-    background: linear-gradient(135deg, #001F3F,#002D50); /* Dark gradient for a futuristic look */
-    padding: 1rem 0;
-    border-bottom: 2px solid #FF4500; /* Vibrant orange border for contrast */
-    position: sticky; /* Keeps the nav fixed at the top while scrolling */
-    top: 0;
-    z-index: 10; /* Ensures it stays on top */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
-}
-
-/* Navigation Links */
-.desktop-nav a {
-    color: #E0E0E0; /* Light gray text for better contrast on dark background */
-    text-decoration: none; /* Removes underline */
-    font-weight: 600; /* Slightly lighter boldness for a clean look */
-    text-transform: uppercase;
-    font-size: 1.1rem; /* Slightly larger text for better readability */
-    transition: color 0.3s ease, background-color 0.3s ease;
-    padding: 0.6rem 1.2rem; /* Adjust padding for more clickable space */
-    border-radius: 10px; /* More rounded edges for a modern feel */
-    letter-spacing: 0.05rem; /* Slight spacing between letters for a sleek look */
-}
-
-/* Hover Effect for Links */
-.desktop-nav a:hover {
-    color: #001F3F; /* Matches the dark gradient */
-    background-color: #FF4500; /* Vibrant orange for hover effect */
-    transform: scale(1.1); /* Slight scale effect for interactivity */
-}
-
-/* Active Link Styling */
-.desktop-nav a.active {
-    color: #FF4500; /* Vibrant orange for active link */
-    background-color: transparent; /* No background for active link */
-    border-bottom: 2px solid #FF4500; /* Vibrant underline for active state */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .desktop-nav {
-        flex-wrap: wrap;
-        padding: 1rem;
-    }
-
-    .desktop-nav a {
-        margin: 0.5rem;
-        font-size: 0.9rem;
-    }
-}
-
-/* Content Section */
-
-/* Intro Section */
-.intro-section {
-    background: linear-gradient(135deg, #001F3F, #002D50); /* Dark blue gradient */
-    padding: 3rem 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-    margin: 2rem auto;
-    max-width: 900px;
-    color: #D0D3D4; /* Light gray text color for readability */
-}
-
-.intro-section h2 {
-    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -150,178 +60,46 @@ body {
     letter-spacing: 1px;
 }
 
-.intro-section p {
-    margin-top: 1rem;
-}
-
-.intro-section .cta-button {
+/* Call-to-Action Button */
+.cta-button {
     display: inline-block;
+    padding: 0.75rem 1.5rem;
     background-color: #FFD700; /* Gold button */
-    color: #001F3F; /* Dark blue text */
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
+    color: #000000; /* Black text */
     font-weight: bold;
-    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 2rem;
 }
 
-.intro-section .cta-button:hover {
-    background-color: #D4AF37; /* Slightly darker gold on hover */
-    transform: scale(1.05); /* Subtle zoom effect */
-}
-
-/* Intro Section Paragraph */
-.intro {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #D0D3D4; /* Light gray for readability */
-    margin-bottom: 1.5rem;
-    text-align: justify;
-    padding: 1rem;
-    background: rgba(0, 45, 80, 0.8); /* Slight blue overlay for emphasis */
-    border-left: 5px solid #FFD700; /* Gold border for a highlight effect */
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-}
-
-.intro strong {
-    color: #FFD700; /* Gold for key points */
-    font-weight: bold;
-}
-
-.intro em {
-    color: #A5C9EA; /* Softer blue for emphasis */
-    font-style: italic;
-}
-
-figure {
-    text-align: center;
-}
-
-figure img {
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-}
-
-figure img:hover {
+.cta-button:hover {
+    background-color: #D4AF37; /* Darker gold on hover */
     transform: scale(1.05);
 }
 
-video {
-    max-width: 100%;
-    border: 2px solid #FFD700;
-    border-radius: 10px;
-}
-/* Content Section */
-.content {
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 900px;
-    text-align: center;
-    background-color: #0B0C10; /* Dark background for futuristic feel */
-    color: #C5C6C7; /* Light gray text for readability */
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-}
-
-/* Section Heading */
-.content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: #66FCF1; /* Aqua blue for emphasis */
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1.2px;
-}
-
-/* Media Container */
-.media-container {
+/* Navigation Bar */
+nav {
+    background-color: #000000; /* Black background for nav */
     display: flex;
-    gap: 2rem;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
     flex-wrap: wrap;
-    margin: 2rem 0;
+    position: relative;
 }
 
-.media-container figure {
-    margin: 0;
-    text-align: center;
-}
-
-.media-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.media-container img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-}
-
-.media-container figcaption {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #C5C6C7;
-    text-align: center;
-}
-
-/* Video Container */
-.video-container {
-    text-align: center;
-    margin: 2rem auto;
-}
-
-.video-container h3 {
-    font-size: 1.8rem;
-    color: #66FCF1; /* Aqua blue for emphasis */
-    margin-bottom: 1rem;
-}
-
-.video-container video {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-}
-
-.video-container figcaption {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    color: #C5C6C7;
-    text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .content h2 {
-        font-size: 2rem;
-    }
-
-    .video-container h3 {
-        font-size: 1.5rem;
-    }
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1.5rem 0;
-    background-color: #161B22;
-    color: #C9D1D9;
-}
-
-footer a {
-    color: #FFD700;
+nav a {
+    color: #FFD700; /* Gold text for links */
     text-decoration: none;
-    margin: 0 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+nav a:hover {
+    color: #000000; /* Black text on hover */
+    background-color: #FFD700; /* Gold background on hover */
 }
