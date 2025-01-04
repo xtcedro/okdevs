@@ -876,3 +876,30 @@ html {
         font-size: 12px;
     }
 }
+
+.legal-links {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Aligns items horizontally */
+    justify-content: center; /* Centers items */
+    gap: 20px; /* Adds spacing between items */
+    font-size: 1rem; /* Sets text size to be consistent with the theme */
+    color: #FFD700; /* Gold text color for items */
+}
+
+.legal-links li {
+    display: inline; /* Ensures list items are inline */
+}
+
+.legal-links a {
+    text-decoration: none; /* Removes underline */
+    color: #FFD700; /* Gold text for links */
+    font-weight: bold; /* Makes links bold */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.legal-links a:hover {
+    color: #FFFFFF; /* White text color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
