@@ -76,7 +76,7 @@ body {
     justify-content: center; /* Center-align the links */
     align-items: center;
     gap: 2rem; /* Space between links */
-    background: linear-gradient(135deg, #001F3F, #002D50); /* Dark gradient for a futuristic look */
+    background: linear-gradient(135deg, #001F3F,#002D50); /* Dark gradient for a futuristic look */
     padding: 1rem 0;
     border-bottom: 2px solid #FF4500; /* Vibrant orange border for contrast */
     position: sticky; /* Keeps the nav fixed at the top while scrolling */
