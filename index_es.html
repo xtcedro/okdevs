@@ -1,36 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="OK Devs - Empoderando a desarrolladores y ciudadanos de Oklahoma a través de la innovación y la colaboración.">
     <title>Inicio - OK Devs</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-        function setLanguage(lang) {
-            if (lang === 'en') {
-                window.location.href = 'index.html';
-            } else {
-                document.getElementById('language-modal').style.display = 'none';
-            }
-        }
-    </script>
 </head>
 <body>
-    <!-- Modal de Selección de Idioma -->
-    <div id="language-modal" class="modal">
-        <div class="modal-content">
-            <h2>Language / Idioma</h2>
-            <div class="language-options">
-                <button onclick="setLanguage('en')">
-                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English
-                </button>
-                <button onclick="setLanguage('es')">
-                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español
-                </button>
-            </div>
-        </div>
-    </div>
 
     <!-- Sección de Encabezado -->
     <header>
@@ -41,7 +18,7 @@
     </header>
 
     <!-- Navegación en Escritorio -->
-    <nav class="desktop-nav">
+    <nav class="navbar">
         <a href="index_es.html" class="active">Inicio</a>
         <a href="about_es.html">Sobre Nosotros</a>
         <a href="letter_es.html">Carta Abierta</a>
