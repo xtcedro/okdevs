@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aviso Legal para OKDEVS.">
+    <title>Aviso Legal - OKDEVS</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Sección de encabezado -->
+    <header>
+        <h1 class="header-title">OK Devs</h1>
+        <div class="title-banner">
+            <img src="../assets/images/okdevs-banner.png" alt="OK Devs - Aviso Legal">
+        </div>
+    </header>
+
+    <!-- Navegación -->
+    <nav class="desktop-nav">
+        <a href="../index_es.html">Inicio</a>
+        <a href="../about_es.html">Sobre Nosotros</a>
+        <a href="../letter_es.html">Carta Abierta</a>
+        <a href="../contact_es.html">Contáctanos</a>
+    </nav>
+
+    <!-- Sección principal -->
+    <section class="hero-section">
+        <h1 class="hero-title">Aviso Legal</h1>
+        <p class="hero-subtitle">Fecha de vigencia: 1 de enero de 2025</p>
+    </section>
+
+    <!-- Secciones de contenido principal -->
+    <main>
+        <section class="about-section">
+            <h2>1. Información General</h2>
+            <p>
+                La información proporcionada en el sitio web de OKDEVS ("Sitio") es únicamente para fines informativos generales. Aunque nos esforzamos por mantener la información precisa y actualizada, no hacemos garantías ni aseguramos de ningún tipo, expresas o implícitas, sobre la integridad, precisión, confiabilidad o disponibilidad de la información en este Sitio.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>2. Descargo de Responsabilidad de Asesoramiento Profesional</h2>
+            <p>
+                La información en este Sitio no debe considerarse como asesoramiento profesional. Para asesoramiento técnico, legal o financiero específico, por favor consulte a un profesional calificado.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>3. Limitación de Responsabilidad</h2>
+            <p>
+                OKDEVS no será responsable de ninguna pérdida o daño, incluidos, entre otros, pérdidas indirectas o consecuentes, que surjan del uso de este Sitio o de la confianza en cualquier información proporcionada en él.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>4. Enlaces a Terceros</h2>
+            <p>
+                Este Sitio puede contener enlaces a sitios web de terceros. OKDEVS no tiene control sobre el contenido de estos sitios web y no asume responsabilidad alguna por su contenido, políticas o prácticas. La inclusión de cualquier enlace no implica necesariamente la aprobación de los puntos de vista expresados en ellos.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>5. Actualizaciones de este Aviso Legal</h2>
+            <p>
+                OKDEVS se reserva el derecho de actualizar o modificar este Aviso Legal en cualquier momento sin previo aviso. Los cambios serán efectivos inmediatamente al publicarse en esta página.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>6. Contáctanos</h2>
+            <p>
+                Si tienes preguntas o inquietudes sobre este Aviso Legal, por favor contáctanos:
+            </p>
+            <ul>
+                <li>Correo Electrónico: <em>Próximamente</em></li>
+                <li>Teléfono: <em>Próximamente</em></li>
+                <li>Ubicación: Área Metropolitana de la Ciudad de Oklahoma</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 OKDEVS. Todos los derechos reservados.</p>
+        <nav class="legal-links">
+            <a href="terms_es.html">Términos y Condiciones</a>
+            <a href="privacy_es.html">Política de Privacidad</a>
+            <a href="disclaimer_es.html" class="active">Aviso Legal</a>
+            <a href="accessibility_es.html">Declaración de Accesibilidad</a>
+            <a href="cookies_es.html">Política de Cookies</a>
+        </nav>
+    </footer>
+</body>
+</html>
