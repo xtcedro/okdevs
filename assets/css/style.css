@@ -73,41 +73,43 @@ body {
 /* Desktop Navigation Bar */
 .desktop-nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center-align the links */
     align-items: center;
-    background-color: #0B0C10; /* Dark background for futuristic feel */
-    padding: 1rem 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-    border-bottom: 2px solid #1F2833; /* Slightly lighter border for separation */
-    position: sticky;
+    gap: 2rem; /* Space between links */
+    background: linear-gradient(135deg, #001F3F, #002D50); /* Dark gradient for a futuristic look */
+    padding: 1rem 0;
+    border-bottom: 2px solid #FF4500; /* Vibrant orange border for contrast */
+    position: sticky; /* Keeps the nav fixed at the top while scrolling */
     top: 0;
-    z-index: 1000;
+    z-index: 10; /* Ensures it stays on top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
 }
 
+/* Navigation Links */
 .desktop-nav a {
-    color: #C5C6C7; /* Light gray for text */
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0 1rem;
+    color: #E0E0E0; /* Light gray text for better contrast on dark background */
+    text-decoration: none; /* Removes underline */
+    font-weight: 600; /* Slightly lighter boldness for a clean look */
     text-transform: uppercase;
-    letter-spacing: 1.2px;
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1rem; /* Slightly larger text for better readability */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.6rem 1.2rem; /* Adjust padding for more clickable space */
+    border-radius: 10px; /* More rounded edges for a modern feel */
+    letter-spacing: 0.05rem; /* Slight spacing between letters for a sleek look */
 }
 
+/* Hover Effect for Links */
 .desktop-nav a:hover {
-    color: #66FCF1; /* Aqua blue for hover effect */
-    transform: scale(1.1); /* Slight enlargement on hover */
+    color: #001F3F; /* Matches the dark gradient */
+    background-color: #FF4500; /* Vibrant orange for hover effect */
+    transform: scale(1.1); /* Slight scale effect for interactivity */
 }
 
+/* Active Link Styling */
 .desktop-nav a.active {
-    color: #66FCF1; /* Aqua blue for the active link */
-    border-bottom: 2px solid #66FCF1; /* Underline the active link */
-}
-
-.desktop-nav a:focus {
-    outline: 2px dashed #66FCF1; /* Accessibility focus indicator */
-    outline-offset: 2px;
+    color: #FF4500; /* Vibrant orange for active link */
+    background-color: transparent; /* No background for active link */
+    border-bottom: 2px solid #FF4500; /* Vibrant underline for active state */
 }
 
 /* Responsive Design */
@@ -122,6 +124,7 @@ body {
         font-size: 0.9rem;
     }
 }
+
 /* Content Section */
 
 /* Intro Section */
