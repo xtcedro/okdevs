@@ -223,3 +223,87 @@ blockquote {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
+/* Content Section */
+.content-section {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Media Container */
+.media-container {
+    display: flex;
+    justify-content: center; /* Center-align items */
+    gap: 2rem; /* Space between items */
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    margin: 2rem 0;
+}
+
+.media-container figure {
+    max-width: 300px;
+    text-align: center;
+}
+
+.media-container img {
+    width: 100%; /* Responsive image */
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-container img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); /* Gold shadow */
+}
+
+.media-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #FFD700; /* Gold text */
+    font-weight: bold;
+}
+
+/* Video Container */
+.video-container {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.video-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Gold text */
+    font-weight: bold;
+}
+
+.video-container video {
+    width: 100%; /* Responsive video */
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+.video-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #FFFFFF; /* White text */
+    font-style: italic;
+}
