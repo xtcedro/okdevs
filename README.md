@@ -48,3 +48,28 @@ The repository is organized as follows:
 - A **Linux-based server** (Debian recommended).
 - **Nginx** installed and configured.
 - **Certbot** for SSL management.
+
+### Contributing
+
+We welcome contributions from the community. Whether it's improving content, fixing bugs, or adding new features, feel free to create a pull request or open an issue.
+
+
+---
+
+###License
+
+This project is licensed under the MIT License.
+
+
+---
+
+### Contact
+
+For inquiries, reach out to:
+
+Email: Coming soon
+
+Phone: Coming soon
+
+Location: Oklahoma City Metro Area
+
