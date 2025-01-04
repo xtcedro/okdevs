@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OK Devs - Empoderando a desarrolladores y ciudadanos de Oklahoma a través de la innovación y la colaboración.">
+    <title>Inicio - OK Devs</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'en') {
+                window.location.href = 'index.html';
+            } else {
+                document.getElementById('language-modal').style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Modal de Selección de Idioma -->
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h2>Language / Idioma</h2>
+            <div class="language-options">
+                <button onclick="setLanguage('en')">
+                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English
+                </button>
+                <button onclick="setLanguage('es')">
+                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Encabezado -->
+    <header>
+        <h1 class="header-title">OK Devs</h1>
+        <div class="title-banner">
+            <img src="assets/images/okdevs-banner.png" alt="OK Devs - Innovación para Oklahoma">
+        </div>
+    </header>
+
+    <!-- Navegación en Escritorio -->
+    <nav class="desktop-nav">
+        <a href="index_es.html" class="active">Inicio</a>
+        <a href="about_es.html">Sobre Nosotros</a>
+        <a href="letter_es.html">Carta Abierta</a>
+        <a href="contact_es.html">Contáctanos</a>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero-section">
+        <h1 class="hero-title">Bienvenidos a OK Devs</h1>
+        <blockquote class="hero-quote">
+            "Empoderando a Oklahoma a través de la innovación, colaboración y transformación."
+        </blockquote>
+        <button class="cta-button" onclick="location.href='letter_es.html'">Leer la Carta Abierta</button>
+        <button class="cta-button secondary" onclick="location.href='about_es.html'">Conoce Más Sobre Nosotros</button>
+    </section>
+
+    <!-- Sección de Contenido -->
+    <section class="content-section">
+        <h2>Imaginando el Futuro</h2>
+        <p>
+            OK Devs es una plataforma dedicada a empoderar a desarrolladores, innovadores y ciudadanos en todo Oklahoma. Nuestra misión es fomentar la colaboración y redefinir lo que es posible en tecnología, gobernanza y desarrollo comunitario.
+        </p>
+        <div class="media-container">
+            <figure>
+                <a href="assets/pdfs/letter_es.pdf" target="_blank">
+                    <img src="assets/images/thumbnail.jpeg" alt="Carta Abierta">
+                </a>
+                <figcaption>Carta Abierta por Pedro M. Dominguez (PDF)</figcaption>
+            </figure>
+        </div>
+        <div class="video-container">
+            <h3>Video: Repensando la Humanidad</h3>
+            <video src="assets/videos/rethinkinghumanity.mp4" controls></video>
+            <figcaption>Explorando la intersección entre tecnología, humanidad y gobernanza.</figcaption>
+        </div>
+    </section>
+
+    <!-- Sección ¿Por Qué Elegirnos? -->
+    <section class="why-choose-us">
+        <h2>¿Por Qué OK Devs?</h2>
+        <p>
+            OK Devs es más que una plataforma; es un llamado a la acción para que innovadores y ciudadanos se unan y den forma al futuro de Oklahoma y más allá.
+        </p>
+        <ul>
+            <li>💡 Empoderando a desarrolladores para liderar la innovación en tecnología.</li>
+            <li>🤝 Conectando la tecnología con el desarrollo comunitario.</li>
+            <li>🌎 Abogando por la colaboración, los derechos de datos y la gobernanza descentralizada.</li>
+            <li>📜 Compartiendo ideas audaces, como los <strong>Estados Digitales de América</strong>, para inspirar la transformación.</li>
+        </ul>
+        <a href="about_es.html" class="cta-button">Sobre OK Devs</a>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 OK Devs. Todos los derechos reservados.</p>
+        <nav class="legal-links">
+            <a href="legal/terms_es.html">Términos y Condiciones</a>
+            <a href="legal/privacy_es.html">Política de Privacidad</a>
+            <a href="legal/disclaimer_es.html">Aviso Legal</a>
+            <a href="legal/accessibility_es.html">Declaración de Accesibilidad</a>
+            <a href="legal/cookies_es.html">Política de Cookies</a>
+        </nav>
+    </footer>
+</body>
+</html>
