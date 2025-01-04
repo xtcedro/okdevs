@@ -394,3 +394,41 @@ blockquote {
     background-color: #D4AF37; /* Lighter gold on hover */
     transform: scale(1.05);
 }
+
+/* Hero Quote Styling */
+.hero-quote {
+    font-style: italic;
+    font-size: 1.5rem; /* Slightly larger font for emphasis */
+    color: #FFD700; /* Gold text */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 1.5rem;
+    border-left: 5px solid #FFD700; /* Gold border on the left */
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+}
+
+.hero-quote em {
+    color: #FFD700; /* Gold color for emphasized text */
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.hero-quote::before {
+    content: '“'; /* Opening quotation mark */
+    font-size: 2rem;
+    color: #FFD700; /* Gold color */
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.hero-quote::after {
+    content: '”'; /* Closing quotation mark */
+    font-size: 2rem;
+    color: #FFD700; /* Gold color */
+    margin-left: 5px;
+    vertical-align: bottom;
+}
