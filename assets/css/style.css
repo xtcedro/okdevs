@@ -540,3 +540,42 @@ html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for flags */
     border: 2px solid #FFD700; /* Gold border around flag */
 }
+
+/* Desktop Navigation Bar */
+.desktop-nav {
+    display: flex;
+    justify-content: center; /* Center-align the links */
+    align-items: center;
+    gap: 2rem; /* Space between links */
+    background-color: #000000; /* Black background */
+    padding: 1rem 0;
+    border-bottom: 2px solid #FFD700; /* Gold border at the bottom */
+    position: relative; /* For any potential positioning tweaks */
+    z-index: 10; /* Ensures it stays on top */
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.2); /* Subtle gold shadow for depth */
+}
+
+/* Navigation Links */
+.desktop-nav a {
+    color: #FFD700; /* Gold text for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded edges for links */
+}
+
+/* Hover Effect for Links */
+.desktop-nav a:hover {
+    color: #000000; /* Black text on hover */
+    background-color: #FFD700; /* Gold background on hover */
+}
+
+/* Active Link Styling */
+.desktop-nav a.active {
+    color: #FFD700; /* Gold text for active link */
+    background-color: transparent; /* No background for active link */
+    border-bottom: 2px solid #FFD700; /* Gold underline for active state */
+}
