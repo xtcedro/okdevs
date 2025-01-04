@@ -446,3 +446,29 @@ blockquote {
     margin-left: 5px;
     vertical-align: bottom;
 }
+
+
+/* Adjusted .title-banner Styling */
+.title-banner {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Optional: Set background color */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.title-banner img {
+  display: block;
+  width: 100vw; /* Slightly reduce size */
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+html {
+ overflow-x: hidden;
+}
