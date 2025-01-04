@@ -97,24 +97,6 @@ h1, h2, h3 {
     letter-spacing: 1px;
 }
 
-/* Call-to-Action Button */
-.cta-button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #FFD700; /* Gold button */
-    color: #000000; /* Black text */
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.cta-button:hover {
-    background-color: #D4AF37; /* Darker gold on hover */
-    transform: scale(1.05);
-}
-
-
 /* Blockquote Styling */
 blockquote {
     font-style: italic;
@@ -164,6 +146,31 @@ blockquote {
     color: #FFD700; /* Gold color */
     margin-left: 5px;
     vertical-align: bottom;
+}
+
+/* Adjusted .title-banner Styling */
+.title-banner {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Optional: Set background color */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.title-banner img {
+  display: block;
+  width: 100vw; /* Slightly reduce size */
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+html {
+ overflow-x: hidden;
 }
 
 
@@ -248,6 +255,23 @@ blockquote {
 }
 
 .call-to-action-section .cta-button:hover {
+    background-color: #D4AF37; /* Darker gold on hover */
+    transform: scale(1.05);
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
     background-color: #D4AF37; /* Darker gold on hover */
     transform: scale(1.05);
 }
@@ -421,31 +445,6 @@ blockquote {
 .why-choose-us .cta-button:hover {
     background-color: #D4AF37; /* Lighter gold on hover */
     transform: scale(1.05);
-}
-
-/* Adjusted .title-banner Styling */
-.title-banner {
-  width: 100vw;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  position: relative; /* Optional: Set background color */
-  top: 0;
-  left: 0;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.title-banner img {
-  display: block;
-  width: 100vw; /* Slightly reduce size */
-  height: auto;
-  margin: 0 auto;
-  object-fit: cover;
-}
-
-html {
- overflow-x: hidden;
 }
 
 /* Language Modal */
