@@ -32,6 +32,34 @@ h1, h2, h3 {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle black shadow for depth */
 }
 
+
+/* Navigation Bar */
+nav {
+    background-color: #002855; /* Dark blue for nav background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #002855;
+    background-color: #FFD700;
+}
+
 /* Navigation Bar */
 .navbar {
     display: flex;
