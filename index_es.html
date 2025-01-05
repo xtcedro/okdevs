@@ -6,10 +6,33 @@
     <meta name="description" content="OK Devs - Empoderando a los desarrolladores y ciudadanos de Oklahoma a través de la innovación y la colaboración.">
     <title>Inicio - OK Devs</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'es') {
+                window.location.href = 'index_es.html';
+            } else {
+                document.getElementById('language-modal').style.display = 'none';
+            }
+        }
+    </script>
 </head>
-
 <body>
-    <!-- Sección de Encabezado -->
+    <!-- Modal de Selección de Idioma -->
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h2>Idioma / Language</h2>
+            <div class="language-options">
+                <button onclick="setLanguage('en')">
+                    <img src="assets/images/us-flag.png" alt="English" class="flag-icon"> English
+                </button>
+                <button onclick="setLanguage('es')">
+                    <img src="assets/images/mx-flag.png" alt="Español" class="flag-icon"> Español
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Encabezado -->
     <header>
         <h1 class="header-title">🚀 OK Devs 🌟</h1>
         <div class="title-banner">
@@ -17,7 +40,7 @@
         </div>
     </header>
 
-    <!-- Barra de Navegación -->
+    <!-- Navegación -->
     <nav class="navbar">
         <a href="index_es.html" class="active">🏠 Inicio</a>
         <a href="about_es.html">📖 Sobre Nosotros</a>
@@ -25,7 +48,7 @@
         <a href="contact_es.html">📬 Contáctanos</a>
     </nav>
 
-    <!-- Sección Principal -->
+    <!-- Sección Hero -->
     <section class="hero-section">
         <h1 class="hero-title">🎉 Bienvenido a OK Devs 🎉</h1>
         <blockquote class="hero-quote">
@@ -39,9 +62,9 @@
     <section class="content-section">
         <h2>🔮 Imaginando el Futuro de Oklahoma</h2>
         <p>
-            En OK Devs, creemos que ¡la Ciudad de Oklahoma es el corazón de la innovación! 🌆✨ 
-            Estamos aquí para empoderar a desarrolladores, creadores e innovadores para construir un futuro lleno de oportunidades, 
-            tecnologías avanzadas y un desarrollo comunitario significativo.
+            En OK Devs, creemos que ¡Oklahoma City es el corazón de la innovación! 🌆✨ 
+            Estamos aquí para empoderar a desarrolladores, creadores e innovadores a construir un futuro lleno de oportunidades, 
+            tecnologías de vanguardia y desarrollo comunitario significativo.
         </p>
         <p>
             Juntos, creemos un mañana más brillante para nuestros vecindarios, negocios y familias. 🏘️❤️ 
@@ -52,36 +75,43 @@
                 <a href="assets/pdfs/letter.pdf" target="_blank">
                     <img src="assets/images/thumbnail.jpeg" alt="Carta Abierta">
                 </a>
-                <figcaption>📄 Carta Abierta de Pedro M. Dominguez (PDF)</figcaption>
+                <figcaption>📄 Carta Abierta por Pedro M. Dominguez (PDF)</figcaption>
             </figure>
+        </div>
+
+        <!-- Contenedor de Video -->
+        <div class="video-container">
+            <h3>🎥 Video: Repensando la Humanidad</h3>
+            <video src="assets/videos/rethinkinghumanity.mp4" controls></video>
+            <figcaption>🌟 Explorando la intersección de la tecnología, la humanidad y el gobierno. 🌟</figcaption>
         </div>
     </section>
 
-    <!-- Por Qué Elegir OK Devs -->
+    <!-- Sección ¿Por Qué OK Devs? -->
     <section class="why-choose-us">
         <h2>💡 ¿Por Qué Elegir OK Devs? 💡</h2>
         <p>
-            La Ciudad de Oklahoma es el hogar de soñadores, constructores y visionarios. 🌟 En OK Devs, celebramos las fortalezas de nuestra comunidad 
+            Oklahoma City es hogar de soñadores, constructores y visionarios. 🌟 En OK Devs, celebramos las fortalezas de nuestra comunidad 
             mientras avanzamos con soluciones innovadoras. Esto es lo que nos hace únicos:
         </p>
         <ul>
-            <li>🌐 <strong>Tecnología para Todos:</strong> Uniendo la tecnología con la comunidad para un impacto duradero.</li>
-            <li>🤝 <strong>Colaboración Primero:</strong> Reuniendo a las personas para el crecimiento y el éxito colectivos.</li>
-            <li>📜 <strong>Visiones Audaces:</strong> Inspirando la transformación con ideas innovadoras como los Estados Digitales de América.</li>
-            <li>🎨 <strong>Creatividad Sin Límites:</strong> Desde desarrolladores hasta diseñadores, todos tienen un lugar en OK Devs.</li>
+            <li>🌐 <strong>Tecnología para Todos:</strong> Conectando tecnología con la comunidad para lograr un impacto duradero.</li>
+            <li>🤝 <strong>Colaboración Primero:</strong> Reuniendo a personas para un crecimiento y éxito colectivo.</li>
+            <li>📜 <strong>Visiones Audaces:</strong> Inspirando la transformación con ideas revolucionarias como los Estados Digitales de América.</li>
+            <li>🎨 <strong>Creatividad Desatada:</strong> Desde desarrolladores hasta diseñadores, todos tienen un lugar en OK Devs.</li>
         </ul>
-        <a href="about_es.html" class="cta-button">🌟 Aprende Sobre OK Devs 🌟</a>
+        <a href="about_es.html" class="cta-button">🌟 Más Sobre OK Devs 🌟</a>
     </section>
 
     <!-- Pie de Página -->
     <footer>
-        <p>&copy; 2024 OK Devs. 🌆 Hecho con ❤️ en la Ciudad de Oklahoma. Todos los derechos reservados.</p>
+        <p>&copy; 2024 OK Devs. 🌆 Hecho con ❤️ en Oklahoma City. Todos los derechos reservados.</p>
         <nav class="legal-links">
-            <a href="legal/terms_es.html">📝 Términos</a>
-            <a href="legal/privacy_es.html">🔒 Privacidad</a>
-            <a href="legal/disclaimer_es.html">⚠️ Descargo</a>
-            <a href="legal/accessibility_es.html">♿ Accesibilidad</a>
-            <a href="legal/cookies_es.html">🍪 Cookies</a>
+            <a href="legal_es/terms.html">📝 Términos</a>
+            <a href="legal_es/privacy.html">🔒 Privacidad</a>
+            <a href="legal_es/disclaimer.html">⚠️ Descargo</a>
+            <a href="legal_es/accessibility.html">♿ Accesibilidad</a>
+            <a href="legal_es/cookies.html">🍪 Cookies</a>
         </nav>
     </footer>
 </body>
