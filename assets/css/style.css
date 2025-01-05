@@ -585,6 +585,29 @@ html {
     text-decoration: underline; /* Adds underline on hover */
 }
 
+/* Footer */
+footer {
+    background-color: #000000; /* Pure black background */
+    color: #FFD700; /* Gold text for links and text */
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 2px solid #FFD700; /* Optional: Gold border at the top */
+    box-shadow: 0 -2px 10px rgba(255, 215, 0, 0.4); /* Optional: Subtle gold shadow above */
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #FFD700; /* Gold text for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFFFFF; /* White on hover */
+    text-decoration: underline;
+}
+
 
 /* Mobile View Styling (max-width: 767px) */
 @media (max-width: 480px) {
