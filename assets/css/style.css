@@ -585,15 +585,6 @@ html {
     text-decoration: underline; /* Adds underline on hover */
 }
 
-/* Footer */
-footer {
-    background-color: #000000; /* Black background */
-    color: #FFFFFF; /* White text */
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
 
 /* Mobile View Styling (max-width: 767px) */
 @media (max-width: 480px) {
