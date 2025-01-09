@@ -1,0 +1,757 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text for readability */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Gold Gradient Titles */
+h1, h2, h3 {
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Header Titles */
+.header-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle black shadow for depth */
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: #000000; /* Black for nav background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    border-bottom: 2px solid #FFD700; /* Gold border at the bottom */
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.4); /* Subtle gold shadow for depth */
+}
+
+nav a {
+    color: #FFD700; /* Gold text for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem; /* Padding for better spacing */
+    border-radius: 5px; /* Smooth edges */
+}
+
+nav a:hover {
+    color: #000000; /* Black text on hover */
+    background-color: #FFD700; /* Gold background on hover */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center-align the links */
+    align-items: center;
+    gap: 2rem; /* Space between links */
+    background-color: #000000; /* Black background */
+    padding: 1rem 0;
+    border-bottom: 2px solid #FFD700; /* Gold border at the bottom */
+    position: relative; /* For any potential positioning tweaks */
+    z-index: 10; /* Ensures it stays on top */
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.2); /* Subtle gold shadow for depth */
+}
+
+/* Navigation Links */
+.navbar a {
+    color: #FFD700; /* Gold text for links */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.5rem 1rem; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded edges for links */
+}
+
+/* Hover Effect for Links */
+.navbar a:hover {
+    color: #000000; /* Black text on hover */
+    background-color: #FFD700; /* Gold background on hover */
+}
+
+/* Active Link Styling */
+.navbar a.active {
+    color: #FFD700; /* Gold text for active link */
+    background-color: transparent; /* No background for active link */
+    border-bottom: 2px solid #FFD700; /* Gold underline for active state */
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #000000; /* Black for hero background */
+    color: #FFFFFF; /* White text */
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #FFD700; /* Gold text for paragraphs */
+}
+
+.hero-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Blockquote Styling */
+blockquote {
+    font-style: italic;
+    background-color: #1C1C1C; /* Dark gray/black background */
+    padding: 1.5rem;
+    border-left: 5px solid #FFD700; /* Gold border */
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 2rem auto;
+    color: #FFFFFF; /* White text */
+    max-width: 700px;
+}
+
+/* Hero Quote Styling */
+.hero-quote {
+    font-style: italic;
+    font-size: 1.5rem; /* Slightly larger font for emphasis */
+    color: #FFD700; /* Gold text */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 1.5rem;
+    border-left: 5px solid #FFD700; /* Gold border on the left */
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+}
+
+.hero-quote em {
+    color: #FFD700; /* Gold color for emphasized text */
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.hero-quote::before {
+    content: '“'; /* Opening quotation mark */
+    font-size: 2rem;
+    color: #FFD700; /* Gold color */
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+.hero-quote::after {
+    content: '”'; /* Closing quotation mark */
+    font-size: 2rem;
+    color: #FFD700; /* Gold color */
+    margin-left: 5px;
+    vertical-align: bottom;
+}
+
+/* Adjusted .title-banner Styling */
+.title-banner {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Optional: Set background color */
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.title-banner img {
+  display: block;
+  width: 100vw; /* Slightly reduce size */
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+html {
+ overflow-x: hidden;
+}
+
+
+/* About Section */
+.about-section {
+    background: linear-gradient(135deg, #000000, #1C1C1C); /* Black gradient */
+    color: #FFFFFF; /* White text */
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 4px solid #FFD700; /* Gold border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Slight shadow */
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    color: #FFD700; /* Gold for titles */
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.about-section a {
+    color: #FFD700; /* Gold for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about-section a:hover {
+    color: #D4AF37; /* Lighter gold on hover */
+}
+
+/* Call to Action Section */
+.call-to-action-section {
+    background: linear-gradient(135deg, #000000, #1C1C1C); /* Black gradient */
+    color: #FFFFFF; /* White text */
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Slight shadow */
+}
+
+.call-to-action-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.call-to-action-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #FFFFFF; /* White text */
+}
+
+.call-to-action-section strong {
+    color: #FFD700; /* Gold for emphasis */
+}
+
+.call-to-action-section .cta-button {
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.call-to-action-section .cta-button:hover {
+    background-color: #D4AF37; /* Darker gold on hover */
+    transform: scale(1.05);
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #D4AF37; /* Darker gold on hover */
+    transform: scale(1.05);
+}
+
+/* Content Section */
+.content-section {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Media Container */
+.media-container {
+    display: flex;
+    justify-content: center; /* Center-align items */
+    gap: 2rem; /* Space between items */
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    margin: 2rem 0;
+}
+
+.media-container figure {
+    max-width: 300px;
+    text-align: center;
+}
+
+.media-container img {
+    width: 100%; /* Responsive image */
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-container img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); /* Gold shadow */
+}
+
+.media-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #FFD700; /* Gold text */
+    font-weight: bold;
+}
+
+/* Video Container */
+.video-container {
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+.video-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #FFD700; /* Gold text */
+    font-weight: bold;
+}
+
+.video-container video {
+    width: 100%; /* Responsive video */
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+.video-container figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #FFFFFF; /* White text */
+    font-style: italic;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text */
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 4px solid #FFD700; /* Gold border */
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.why-choose-us p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #D0D3D4; /* Light gray for better readability */
+}
+
+.why-choose-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.why-choose-us ul li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding-left: 2.5rem;
+    position: relative;
+    color: #FFFFFF; /* White text */
+    font-weight: bold;
+}
+
+.why-choose-us ul li::before {
+    content: "✔"; /* Checkmark symbol */
+    color: #FFD700; /* Gold color */
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0; /* Align icon to the left of the text */
+    top: 0;
+}
+
+.why-choose-us blockquote {
+    font-style: italic;
+    background-color: #333333; /* Dark gray blockquote background */
+    color: #FFD700; /* Gold text */
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-left: 5px solid #FFD700; /* Gold border on the left */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    max-width: 800px;
+}
+
+.why-choose-us .cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #FFD700; /* Gold button */
+    color: #000000; /* Black text */
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.why-choose-us .cta-button:hover {
+    background-color: #D4AF37; /* Lighter gold on hover */
+    transform: scale(1.05);
+}
+
+/* Language Modal */
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden; /* Prevents scrolling when the modal is open */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #000000; /* Pure black background */
+    color: #FFFFFF; /* White text */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4); /* Subtle gold shadow */
+    max-width: 400px;
+    width: 90%;
+    font-size: 1.5rem;
+}
+
+/* Modal Title */
+.modal-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #FFD700, #FFC200, #FFAA00); /* Gold gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Transparent text with gradient */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Language Options */
+.language-options {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Language Buttons */
+.language-options button {
+    background-color: #1C1C1C; /* Dark gray for buttons */
+    color: #FFD700; /* Gold text */
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between text and flag */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(255, 215, 0, 0.4); /* Subtle gold shadow */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Hover Effect for Buttons */
+.language-options button:hover {
+    background-color: #FFD700; /* Gold hover effect */
+    color: #000000; /* Black text on hover */
+    transform: scale(1.05); /* Slight zoom */
+}
+
+/* Flag Icon */
+.flag-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for flags */
+    border: 2px solid #FFD700; /* Gold border around flag */
+}
+
+.legal-links {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Aligns items horizontally */
+    justify-content: center; /* Centers items */
+    gap: 20px; /* Adds spacing between items */
+    font-size: 1rem; /* Sets text size to be consistent with the theme */
+    color: #FFD700; /* Gold text color for items */
+}
+
+.legal-links li {
+    display: inline; /* Ensures list items are inline */
+}
+
+.legal-links a {
+    text-decoration: none; /* Removes underline */
+    color: #FFD700; /* Gold text for links */
+    font-weight: bold; /* Makes links bold */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.legal-links a:hover {
+    color: #FFFFFF; /* White text color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #000000; /* Pure black background */
+    color: #FFD700; /* Gold text for links and text */
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 2px solid #FFD700; /* Optional: Gold border at the top */
+    box-shadow: 0 -2px 10px rgba(255, 215, 0, 0.4); /* Optional: Subtle gold shadow above */
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #FFD700; /* Gold text for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFFFFF; /* White on hover */
+    text-decoration: underline;
+}
+
+
+/* Mobile View Styling (max-width: 767px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .desktop-nav {
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center;
+        padding: 1rem 0;
+        gap: 1rem; /* Space between links */
+    }
+
+    .desktop-nav a {
+        font-size: 0.85rem; /* Smaller font size for mobile */
+        width: 100%; /* Full-width links */
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+        text-align: center; /* Center align text */
+    }
+
+    .desktop-nav a.active {
+        border-bottom: none; /* Remove underline on active link for mobile */
+    }
+
+    .hero-section {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    }
+
+    .hero-title {
+        font-size: 1.8rem; /* Resize title for better visibility */
+        margin-bottom: 1rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 1rem; /* Adjust button size for readability */
+    }
+
+    .title-banner {
+        padding: 1rem 0; /* Add spacing for mobile */
+        background-color: #f8f8f8; /* Optional: light background for contrast */
+    }
+
+    .title-banner img {
+        max-width: 100%; /* Ensure full responsiveness */
+        height: auto;
+        margin: 0 auto; /* Center the image */
+    }
+
+    .hero-contact {
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+        margin: 1.5rem auto; /* Adjust margin for spacing */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+
+    .hero-contact h2 {
+        font-size: 1.5rem; /* Slightly smaller heading */
+    }
+
+    .hero-contact p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+
+    .hero-contact a {
+        font-size: 1rem; /* Consistent link size */
+    }
+
+    .hero-contact {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+        margin: 1rem auto; /* Center and reduce margin */
+        max-width: 90%; /* Use most of the screen width */
+    }
+
+}
+
+/* Tablet View Adjustments (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body { font-size: 22px; /* Adjust base font size */ }
+
+    .desktop-nav {
+        justify-content: space-between; /* Distribute navigation links evenly */
+        padding: 1rem 1.5rem;
+    }
+
+    .desktop-nav a {
+        font-size: 0.9rem; /* Slightly larger font size for tablets */
+        padding: 0.5rem 1rem;
+    }
+
+    .desktop-nav a.active {
+        border-bottom: 2px solid #FFD700; /* Retain underline for tablets */
+    }
+
+    .hero-title {
+        font-size: 2.2rem; /* Adjust title size for tablets */
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem; /* Adjust button size */
+    }
+
+    .title-banner {
+        padding: 0; /* Moderate padding for tablets */
+    }
+
+    .title-banner img {
+        width: 100vw; /* Slightly reduce image size */
+    }
+
+    .hero-contact {
+        padding: 2rem; /* Standard padding for tablets */
+        margin: 2rem auto;
+        font-size: 1rem; /* Standard paragraph size */
+    }
+
+    .hero-contact h2 {
+        font-size: 1.7rem; /* Adjust heading size */
+    }
+
+    .hero-contact p {
+        font-size: 1rem; /* Standard paragraph size */
+    }
+
+    .hero-contact a {
+        font-size: 1rem; /* Consistent link size */
+    }
+
+    .legal-links {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .legal-links a {
+        font-size: 12px;
+    }
+}
