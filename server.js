@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(cors());
 
-// Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(express.static(path.join(__dirname, '../../html/public')));
 
 // Test route
 app.get('/api', (req, res) => {
